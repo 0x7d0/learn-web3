@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Dropdown } from 'react-bootstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Jumbotron } from 'react-bootstrap';
 
 
 function App() {
