@@ -1,51 +1,44 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Dropdown } from 'react-bootstrap';
-
+import './App.css';
 
 function App() {
-  const navigateTo = (url) => {
-    window.location.href = url;
-  };
-
   return (
-    <Container className="mt-5">
+    <div className="App">
       <Container fluid className="text-center bg-light py-5">
         <h1 className="display-4">Learn Web3</h1>
-        <p className="lead">Your ultimate guide to mastering Web3, Blockchain, and Cryptocurrencies</p>
-    </Container>
-
-      <div className="text-center">
-        <Dropdown onSelect={navigateTo}>
+        <p className="lead">
+          Your ultimate guide to mastering Web3, Blockchain, and Cryptocurrencies
+        </p>
+        <img
+          src="https://example.com/path-to-your-image/hero-image.png"
+          alt="Web3 and Blockchain illustration"
+          className="img-fluid my-4"
+        />
+        <p>
+          In today's rapidly evolving digital world, Web3 and cryptocurrencies are revolutionizing how we interact with the internet and conduct transactions. Understanding these technologies is crucial for staying ahead of the curve and unlocking new opportunities. Our comprehensive curriculum will guide you through the fundamentals of Web3, blockchain, and cryptocurrencies, empowering you to navigate this exciting landscape with confidence.
+        </p>
+        <h2 className="mb-3">Course Topics</h2>
+        <Dropdown>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
-            Choose a topic
+            Select a Topic
           </Dropdown.Toggle>
+
           <Dropdown.Menu>
-            <Dropdown.Item eventKey="introduction-to-cryptocurrencies.html">
-              Introduction to Cryptocurrencies and Blockchain
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="setting-up-crypto-wallet.html">
-              Setting up a Crypto Wallet and Buying Cryptocurrencies
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="introduction-to-web3.html">
-              Introduction to Web3
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="smart-contracts-and-solidity.html">
-              Smart Contracts and Solidity
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="ethereum-development.html">
-              Ethereum Development
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="nfts.html">
-              NFTs (Non-Fungible Tokens)
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="decentralized-finance.html">
-              Decentralized Finance (DeFi)
-            </Dropdown.Item>
+            <Dropdown.Item href="#introduction">1. Introduction to Web3 and Blockchain</Dropdown.Item>
+            <Dropdown.Item href="#crypto">2. Cryptocurrencies and Tokens</Dropdown.Item>
+            <Dropdown.Item href="#wallets">3. Wallets and Key Management</Dropdown.Item>
+            <Dropdown.Item href="#smart-contracts">4. Smart Contracts and DApps</Dropdown.Item>
+            <Dropdown.Item href="#decentralized-storage">5. Decentralized Storage and Data Privacy</Dropdown.Item>
+            <Dropdown.Item href="#scaling">6. Scaling and Interoperability</Dropdown.Item>
+            <Dropdown.Item href="#nfts">7. Non-Fungible Tokens (NFTs)</Dropdown.Item>
+            <Dropdown.Item href="#defi">8. Decentralized Finance (DeFi)</Dropdown.Item>
+            <Dropdown.Item href="#dao">9. Decentralized Autonomous Organizations (DAOs)</Dropdown.Item>
+            <Dropdown.Item href="#web3-development">10. Web3 Development</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
