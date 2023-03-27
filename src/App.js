@@ -10,12 +10,11 @@ function App() {
 
   return (
     <Container className="mt-5">
-      <Jumbotron className="text-center">
-        <h1>Welcome to Learn Web3</h1>
-        <p>
-          Are you ready to embark on a journey into the world of web3, cryptocurrencies, and decentralized technologies? At Learn Web3, we provide a comprehensive curriculum designed to take you from a complete beginner to an intermediate level in web3 and blockchain development. Our expertly crafted course covers essential topics, such as cryptocurrencies, blockchain, smart contracts, decentralized applications (dApps), non-fungible tokens (NFTs), and decentralized finance (DeFi). By joining our community, you'll gain the knowledge and skills needed to navigate the rapidly evolving web3 ecosystem and capitalize on the opportunities it presents. So, why wait? Dive in, explore our content, and unlock the power of web3 today!
-        </p>
-      </Jumbotron>
+      <Container fluid className="text-center bg-light py-5">
+        <h1 className="display-4">Learn Web3</h1>
+        <p className="lead">Your ultimate guide to mastering Web3, Blockchain, and Cryptocurrencies</p>
+    </Container>
+
       <div className="text-center">
         <Dropdown onSelect={navigateTo}>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
