@@ -11,7 +11,7 @@ function App() {
           Your ultimate guide to mastering Web3, Blockchain, and Cryptocurrencies
         </p>
         <img
-          src="logo.png"
+          src="src/logo.png"
           alt="Web3 and Blockchain illustration"
           className="img-fluid my-4"
         />
