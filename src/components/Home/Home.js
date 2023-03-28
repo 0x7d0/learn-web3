@@ -1,11 +1,17 @@
 import React from 'react';
+import Sidebar from '../Sidebar/Sidebar';
 import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home-content">
-        <h2>Unlock the Future with Web3 and Cryptocurrency</h2>
-            <p>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-3">
+          <Sidebar />
+        </div>
+        <div className="col-md-9">
+          <div className="home">
+          <p>
             The world is evolving rapidly, and decentralized technologies are at the forefront of this digital revolution. By investing just $4.99 in this comprehensive course, you will gain an in-depth understanding of web3 and cryptocurrencies, positioning yourself for success in this groundbreaking industry.
             </p>
             <p>
@@ -20,8 +26,11 @@ const Home = () => {
             <p>
             Don't miss out on the opportunity to be a part of the decentralized revolution. For just $4.99, you can unlock a world of possibilities and set yourself apart in the rapidly growing web3 and crypto space. Invest in your future today, and start your journey towards success in the decentralized world!
             </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Home;
