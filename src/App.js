@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header/Header';
-import Section1 from './components/Section1/Section1';
+import Section1 from './components/Sections/Section1';
 import {
   BrowserRouter as Router,
   Route,
