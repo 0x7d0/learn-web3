@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Home from './components/Home/Home';
 import Section1 from './components/Sections/Section1/Section1';
+import Section1_1 from './components/Sections/Section1/Section1_1';
 
 function App() {
   return (
