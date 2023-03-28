@@ -13,7 +13,7 @@ function Header() {
             with the knowledge and skills to navigate the decentralized future.
           </p>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="d-flex justify-content-center">
           <img src={heroImage} alt="Web3 and Cryptocurrencies" className="header-image" />
         </Col>
       </Row>
