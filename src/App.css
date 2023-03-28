@@ -1,24 +1,90 @@
+/* App.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
 .App {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
-.bg-light {
-  background-color: #f8f9fa!important;
+.navbar {
+  margin-bottom: 30px;
 }
 
-.container,
-.container-fluid,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.navbar-brand {
+  font-weight: bold;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.hero-section img {
   width: 100%;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.course-container .sidebar {
+  width: 25%;
+  border-right: 1px solid #dee2e6;
+  padding-right: 20px;
+}
+
+.course-container .content {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.course-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.course-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.course-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.course-container li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
