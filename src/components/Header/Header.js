@@ -1,18 +1,15 @@
 import React from 'react';
-//import { Row, Col } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import './Header.css';
 
-function Header() {
+const Header = () => {
   return (
-    <header className="hero-section">
-      <h1>Welcome to Learn Web3</h1>
-      <p>
-        Explore the world of cryptocurrencies, blockchain, and decentralized applications.
-        Learn about Ethereum, DeFi, NFTs, and more. Start your journey to becoming a Web3 expert today!
-      </p>
-      <img src="./hero-image.jpg" alt="Web3 illustration" />
+    <header>
+      <Navbar bg="dark" variant="dark" expand="lg" className="header-navbar">
+        <Navbar.Brand href="/">Learn Web3</Navbar.Brand>
+      </Navbar>
     </header>
   );
-}
+};
 
 export default Header;

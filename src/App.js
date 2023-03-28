@@ -1,42 +1,30 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import './App.css';
 import Header from './components/Header/Header';
-import Section1 from './components/Sections/Section1/Section1';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from 'react-router-dom';
+import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import Section1 from './components/Sections/Section1';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Learn Web3</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/section1">1. Introduction to Web3 and Cryptocurrencies</Nav.Link>
-              <Nav.Link href="/section2">2. Blockchain Technology Basics</Nav.Link>
-              <Nav.Link href="/section3">3. Ethereum and Smart Contracts</Nav.Link>
-              <Nav.Link href="/section4">4. Decentralized Finance (DeFi)</Nav.Link>
-              <Nav.Link href="/section5">5. Non-fungible Tokens (NFTs)</Nav.Link>
-              <Nav.Link href="/section6">6. Building Decentralized Applications (dApps)</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <Switch>
-          <Route path="/section1" component={Section1} />
-          {/* Add other routes here */}
-          <Redirect from="/" to="/section1" />
-        </Switch>
+    <div className="App">
+      <Router>
         <Header />
-      </div>
-    </Router>
+        <Container fluid>
+          <div className="content-wrapper">
+            <Sidebar />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/section1" component={Section1} />
+            </Switch>
+          </div>
+        </Container>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
