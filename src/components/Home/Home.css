@@ -18,3 +18,23 @@
     margin: 0 auto;
   }
   
+  .home-content {
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+  
+  .home-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    margin-bottom: 20px;
+  }
+  
+  .home-content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
