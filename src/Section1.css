@@ -1,11 +1,51 @@
-.Section1 {
-  margin-top: 30px;
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.Section1 h1 {
-  margin-bottom: 20px;
+/* Header */
+.header-container {
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
 }
 
-.Section1 .ListGroup .ListGroup-Item {
+.header-text {
+  padding-right: 2rem;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+.nav-container {
+  margin-top: 2rem;
+}
+
+.nav-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #6c757d;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  text-decoration: none;
 }
