@@ -1,6 +1,9 @@
 .home {
-    margin-left: 260px;
-    padding: 1.5rem;
+    padding-left: 280px;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
   }
   
   .home h2 {
