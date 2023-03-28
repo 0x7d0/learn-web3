@@ -1,1 +1,5 @@
-
+/* CourseTopics.css */
+.course-topics .dropdown-item {
+  white-space: normal;
+  text-align: left;
+}
