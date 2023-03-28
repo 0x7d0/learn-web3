@@ -4,26 +4,22 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home-content">
-      <h1>Master Web3 and Crypto with Our Comprehensive Course</h1>
-      <p>
-        Join the revolution and become an expert in blockchain, cryptocurrencies, and Web3 technologies with our in-depth course. For just $4.99, you'll have access to a wealth of knowledge that will help you unlock the future of finance and the internet.
-      </p>
-      <p>
-        This course is tailored for technically inclined individuals who want to dive deeper into the world of Web3 and cryptocurrencies. Whether you are a developer, entrepreneur, or just curious about the possibilities of decentralization, this course will provide you with a strong foundation in Web3 technologies and the crypto space.
-      </p>
-      <p>
-        With our course, you will:
-        <ul>
-          <li>Learn the fundamentals of blockchain technology and how it's revolutionizing industries</li>
-          <li>Understand Ethereum, smart contracts, and decentralized applications (dApps)</li>
-          <li>Explore the growing world of decentralized finance (DeFi) and non-fungible tokens (NFTs)</li>
-          <li>Acquire practical skills in building your own dApps and working with Web3 libraries</li>
-          <li>Stay up-to-date with the latest trends and developments in the crypto ecosystem</li>
-        </ul>
-      </p>
-      <p>
-        Don't miss this opportunity to invest in your future and be part of the decentralized revolution. Enroll now for just $4.99 and start learning today!
-      </p>
+        <h2>Unlock the Future with Web3 and Cryptocurrency</h2>
+            <p>
+            The world is evolving rapidly, and decentralized technologies are at the forefront of this digital revolution. By investing just $4.99 in this comprehensive course, you will gain an in-depth understanding of web3 and cryptocurrencies, positioning yourself for success in this groundbreaking industry.
+            </p>
+            <p>
+            As decentralized applications (dApps) and digital currencies continue to disrupt traditional systems, an increasing number of opportunities are emerging for skilled individuals. Our course is designed to help you navigate this complex landscape, enabling you to tap into new career paths and business prospects.
+            </p>
+            <p>
+            By learning the ins and outs of blockchain technology, Ethereum, smart contracts, DeFi, and NFTs, you will be able to build innovative applications and contribute to the growth of the decentralized economy. This is your chance to become a pioneer in an industry that is reshaping the way we interact, transact, and create value.
+            </p>
+            <p>
+            Our course is tailored for technical individuals who may not yet be advanced in crypto and web3 but are eager to expand their skill set. By breaking down complex concepts into easily digestible lessons, we make the learning experience enjoyable and engaging.
+            </p>
+            <p>
+            Don't miss out on the opportunity to be a part of the decentralized revolution. For just $4.99, you can unlock a world of possibilities and set yourself apart in the rapidly growing web3 and crypto space. Invest in your future today, and start your journey towards success in the decentralized world!
+            </p>
     </div>
   );
 }
