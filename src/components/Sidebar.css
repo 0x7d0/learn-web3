@@ -1,38 +1,48 @@
-.Sidebar {
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 250px;
     background-color: #f8f9fa;
-    padding: 1rem;
+    padding: 20px;
     overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
   }
   
-  .Sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  .sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
   
-  .Sidebar ul li {
-    cursor: pointer;
-    padding: 0.5rem;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-  
-  .Sidebar ul li:hover {
+  .sidebar a:hover {
     background-color: #343a40;
     color: #ffffff;
-    border-radius: 3px;
   }
   
-  .Sidebar ul ul {
-    padding-left: 1.5rem;
+  .sidebar .nav-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #404040;
   }
   
-  .Sidebar ul ul li {
-    font-size: 13px;
+  .sidebar .nav-section {
+    margin-bottom: 20px;
   }
   
+  .sidebar .nav-subsection {
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+  
+  .sidebar .nav-subsection a {
+    padding: 8px 20px;
+  }
