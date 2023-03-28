@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Accordion } from 'react-bootstrap';
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -10,7 +11,11 @@ const Sidebar = () => {
           <Accordion.Header>1. Introduction to Web3 and Cryptocurrencies</Accordion.Header>
           <Accordion.Body>
             <Nav className="flex-column">
-              <Nav.Link href="#section1.1">1.1. What is Web3?</Nav.Link>
+            <Nav.Item>
+                <Link to="/section1_1" className="nav-link">
+                 1.1. What is Web3 and Why Does It Matter?
+                </Link>
+            </Nav.Item>
               <Nav.Link href="#section1.2">1.2. History of Cryptocurrencies</Nav.Link>
               <Nav.Link href="#section1.3">1.3. Basics of Cryptocurrencies</Nav.Link>
             </Nav>
