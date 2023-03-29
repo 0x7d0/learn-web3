@@ -26,4 +26,23 @@
     max-width: 100%;
     height: auto;
   }
-  
+  .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #282c34;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
