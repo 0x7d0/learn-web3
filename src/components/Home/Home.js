@@ -6,9 +6,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
-          <Sidebar />
-        </div>
+
         <div className="col-md-9">
           <div className="home">
           <p>
@@ -34,3 +32,8 @@ const Home = () => {
 };
 
 export default Home;
+
+
+//        <div className="col-md-3">
+//<Sidebar />
+//</div>
